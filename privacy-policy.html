@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Deposit Defender</title>
+    <meta name="description" content="Deposit Defender Privacy Policy - Learn how we protect and handle your personal information.">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --neon-blue: #00FFFF;
+            --charcoal: #0B0B0B;
+            --light-gray: #EAEAEA;
+            --dark-gray: #1a1a1a;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: var(--charcoal);
+            color: var(--light-gray);
+            line-height: 1.8;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(11, 11, 11, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            padding: 1.2rem 5%;
+            border-bottom: 1px solid rgba(0, 255, 255, 0.1);
+        }
+
+        nav .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            text-decoration: none;
+        }
+
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+        }
+
+        .shield {
+            width: 100%;
+            height: 100%;
+            fill: none;
+            stroke: var(--neon-blue);
+            stroke-width: 2;
+            filter: drop-shadow(0 0 10px var(--neon-blue));
+        }
+
+        .logo-text {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--neon-blue);
+            text-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+            list-style: none;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: var(--light-gray);
+            text-decoration: none;
+            transition: all 0.3s;
+            font-weight: 500;
+            font-size: 1rem;
+        }
+
+        .nav-links a:hover {
+            color: var(--neon-blue);
+        }
+
+        .mobile-menu {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+            padding: 5px;
+        }
+
+        .mobile-menu span {
+            width: 28px;
+            height: 3px;
+            background: var(--neon-blue);
+            transition: 0.3s;
+            border-radius: 2px;
+        }
+
+        .privacy-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 10rem 5% 5rem;
+        }
+
+        .privacy-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .privacy-header h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, var(--light-gray), var(--neon-blue));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .last-updated {
+            color: rgba(234, 234, 234, 0.6);
+            font-size: 1rem;
+            font-style: italic;
+        }
+
+        .key-points {
+            background: rgba(0, 255, 255, 0.05);
+            border: 1px solid rgba(0, 255, 255, 0.2);
+            border-radius: 15px;
+            padding: 2.5rem;
+            margin-bottom: 4rem;
+        }
+
+        .key-points h2 {
+            color: var(--neon-blue);
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+        }
+
+        .key-point-item {
+            margin-bottom: 1.5rem;
+        }
+
+        .key-point-item h3 {
+            color: var(--neon-blue);
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .key-point-item p {
+            color: rgba(234, 234, 234, 0.85);
+        }
+
+        .privacy-content {
+            background: rgba(0, 255, 255, 0.02);
+            border: 1px solid rgba(0, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 3rem;
+        }
+
+        .privacy-section {
+            margin-bottom: 3rem;
+        }
+
+        .privacy-section h2 {
+            color: var(--neon-blue);
+            font-size: 1.8rem;
+            margin-bottom: 1.2rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid rgba(0, 255, 255, 0.2);
+        }
+
+        .privacy-section h3 {
+            color: var(--neon-blue);
+            font-size: 1.3rem;
+            margin: 1.5rem 0 1rem;
+        }
+
+        .privacy-section p {
+            margin-bottom: 1rem;
+            color: rgba(234, 234, 234, 0.85);
+        }
+
+        .privacy-section ul {
+            margin: 1rem 0 1rem 2rem;
+            color: rgba(234, 234, 234, 0.85);
+        }
+
+        .privacy-section ul li {
+            margin-bottom: 0.8rem;
+            line-height: 1.7;
+        }
+
+        .highlight-box {
+            background: rgba(0, 255, 255, 0.08);
+            border-left: 4px solid var(--neon-blue);
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 5px;
+        }
+
+        .contact-box {
+            background: rgba(0, 255, 255, 0.05);
+            border: 1px solid rgba(0, 255, 255, 0.3);
+            border-radius: 15px;
+            padding: 2rem;
+            margin-top: 3rem;
+            text-align: center;
+        }
+
+        .contact-box h3 {
+            color: var(--neon-blue);
+            margin-bottom: 1rem;
+        }
+
+        .contact-box a {
+            color: var(--neon-blue);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .contact-box a:hover {
+            text-shadow: 0 0 10px var(--neon-blue);
+        }
+
+        footer {
+            background: var(--charcoal);
+            padding: 3rem 5%;
+            text-align: center;
+            border-top: 1px solid rgba(0, 255, 255, 0.1);
+        }
+
+        .footer-content {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.8rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-logo-icon {
+            width: 35px;
+            height: 35px;
+        }
+
+        .footer-logo-text {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--neon-blue);
+        }
+
+        footer p {
+            color: rgba(234, 234, 234, 0.6);
+            margin: 0.5rem 0;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin: 1.5rem 0;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            color: rgba(234, 234, 234, 0.7);
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: var(--neon-blue);
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: rgba(11, 11, 11, 0.98);
+                flex-direction: column;
+                padding: 2rem;
+                border-top: 1px solid rgba(0, 255, 255, 0.2);
+                gap: 1.5rem;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .mobile-menu {
+                display: flex;
+            }
+
+            .privacy-container {
+                padding: 8rem 5% 3rem;
+            }
+
+            .privacy-header h1 {
+                font-size: 2rem;
+            }
+
+            .privacy-content {
+                padding: 2rem 1.5rem;
+            }
+
+            .key-points {
+                padding: 2rem 1.5rem;
+            }
+
+            .privacy-section h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <a href="index.html" class="logo-container">
+                <div class="logo-icon">
+                    <svg class="shield" viewBox="0 0 100 120">
+                        <path d="M50 5 L10 20 L10 50 Q10 90 50 115 Q90 90 90 50 L90 20 Z"/>
+                    </svg>
+                </div>
+                <div class="logo-text">DEPOSIT DEFENDER</div>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#products">Features</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="terms-of-use.html">Terms</a></li>
+                <li><a href="privacy-policy.html">Privacy</a></li>
+            </ul>
+            <div class="mobile-menu" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="privacy-container">
+        <div class="privacy-header">
+            <h1>Privacy Policy</h1>
+            <p class="last-updated">Last Updated: August 28, 2025</p>
+        </div>
+
+        <div class="key-points">
+            <h2>Key Privacy Points</h2>
+            <div class="key-point-item">
+                <h3>Information We Collect</h3>
+                <p>We collect account, profile, and document information you provide, along with device and usage data automatically.</p>
+            </div>
+            <div class="key-point-item">
+                <h3>How We Use Your Data</h3>
+                <p>Your data is used to provide app services, process payments, and improve app functionality and security.</p>
+            </div>
+            <div class="key-point-item">
+                <h3>Information Sharing</h3>
+                <p>We do not sell your data. We may share it with trusted service providers for core functions like cloud hosting.</p>
+            </div>
+            <div class="key-point-item">
+                <h3>Your Rights & Choices</h3>
+                <p>You have the right to access, update, and delete your personal information and control communication preferences.</p>
+            </div>
+            <div class="key-point-item">
+                <h3>Data Retention</h3>
+                <p>We retain your data as long as your account is active and for a limited time after for legal or business reasons.</p>
+            </div>
+            <div class="key-point-item">
+                <h3>Data Security</h3>
+                <p>We use encryption and access controls to protect your information, but no method is 100% secure.</p>
+            </div>
+        </div>
+
+        <div class="privacy-content">
+            <div class="privacy-section">
+                <h2>1. Introduction</h2>
+                <p>Deposit Defender ("we," "our," or "us") respects your privacy and is committed to protecting your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application ("App"). By using the App, you consent to the data practices described in this Privacy Policy.</p>
+            </div>
+
+            <div class="privacy-section">
+                <h2>2. Information We Collect</h2>
+                
+                <h3>2.1 Personal Information You Provide</h3>
+                <p>We collect information you directly provide to us, including:</p>
+                <ul>
+                    <li><strong>Account Information:</strong> Name, email address, phone number</li>
+                    <li><strong>Profile Information:</strong> User preferences, settings, profile picture</li>
+                    <li><strong>Communication Data:</strong> Messages, support requests, feedback</li>
+                    <li><strong>Document Information:</strong> Rental agreements, receipts, and other documents you choose to store</li>
+                    <li><strong>Payment Information:</strong> Billing details processed through Apple's App Store (we do not directly store payment card information)</li>
+                </ul>
+
+                <h3>2.2 Information Automatically Collected</h3>
+                <p>When you use our App, we automatically collect certain information:</p>
+                <ul>
+                    <li><strong>Device Information:</strong> Device type, operating system, unique device identifiers</li>
+                    <li><strong>Usage Data:</strong> App usage patterns, features accessed, time spent in app</li>
+                    <li><strong>Log Data:</strong> IP address, access times, app crashes, performance data</li>
+                    <li><strong>Location Data:</strong> General geographic location (with your permission)</li>
+                </ul>
+
+                <h3>2.3 Information from Third Parties</h3>
+                <p>We may collect information from:</p>
+                <ul>
+                    <li><strong>Apple App Store:</strong> Purchase history, subscription status</li>
+                    <li><strong>Social Media:</strong> If you connect social media accounts (with your permission)</li>
+                    <li><strong>Analytics Providers:</strong> Aggregated usage statistics and performance metrics</li>
+                </ul>
+            </div>
+
+            <div class="privacy-section">
+                <h2>3. How We Use Your Information</h2>
+                <p>We use your information for the following purposes:</p>
+
+                <h3>Service Provision</h3>
+                <ul>
+                    <li>Provide and maintain the App's functionality</li>
+                    <li>Process subscriptions and payments</li>
+                    <li>Enable document storage and retrieval</li>
+                    <li>Send appointment reminders and notifications</li>
+                    <li>Provide customer support</li>
+                </ul>
+
+                <h3>Communication</h3>
+                <ul>
+                    <li>Respond to your inquiries and support requests</li>
+                    <li>Send important service announcements</li>
+                    <li>Provide educational content and tips</li>
+                    <li>Send promotional communications (with consent)</li>
+                </ul>
+
+                <h3>Improvement and Analytics</h3>
+                <ul>
+                    <li>Analyze app usage to improve features</li>
+                    <li>Monitor app performance and fix bugs</li>
+                    <li>Conduct research and analytics</li>
+                    <li>Develop new features and services</li>
+                </ul>
+
+                <h3>Legal and Safety</h3>
+                <ul>
+                    <li>Comply with legal obligations</li>
+                    <li>Protect against fraud and abuse</li>
+                    <li>Enforce our Terms of Use</li>
+                    <li>Protect user safety and security</li>
+                </ul>
+            </div>
+
+            <div class="privacy-section">
+                <h2>4. Information Sharing and Disclosure</h2>
+                <div class="highlight-box">
+                    <p><strong>We do not sell your personal information.</strong></p>
+                </div>
+                <p>We may share your information in the following circumstances:</p>
+
+                <h3>Service Providers</h3>
+                <p>We may share information with trusted third-party service providers who assist us in:</p>
+                <ul>
+                    <li>Cloud storage and hosting</li>
+                    <li>Analytics and performance monitoring</li>
+                    <li>Customer support services</li>
+                    <li>Payment processing</li>
+                </ul>
+
+                <h3>Business Transfers</h3>
+                <p>In the event of a merger, acquisition, or sale of assets, your information may be transferred to the acquiring entity.</p>
+
+                <h3>Legal Requirements</h3>
+                <p>We may disclose your information when required by law to:</p>
+                <ul>
+                    <li>Comply with legal processes or government requests</li>
+                    <li>Enforce our policies and terms</li>
+                    <li>Protect rights, property, or safety</li>
+                    <li>Investigate potential violations</li>
+                </ul>
+
+                <h3>With Your Consent</h3>
+                <p>We may share information with your explicit consent for specific purposes not covered in this policy.</p>
+            </div>
+
+            <div class="privacy-section">
+                <h2>5. Data Security</h2>
+                <p>We implement appropriate technical and organizational measures to protect your information, including:</p>
+                <ul>
+                    <li><strong>Encryption:</strong> Data encryption in transit and at rest</li>
+                    <li><strong>Access Controls:</strong> Restricted access to personal information</li>
+                    <li><strong>Security Audits:</strong> Regular security assessments and updates</li>
+                    <li><strong>Incident Response:</strong> Procedures for handling security breaches</li>
+                </ul>
+                <div class="highlight-box">
+                    <p><strong>Important:</strong> However, no method of transmission or storage is 100% secure, and we cannot guarantee absolute security.</p>
+                </div>
+            </div>
+
+            <div class="privacy-section">
+                <h2>6. Data Retention</h2>
+                <p>We retain your information for as long as necessary to:</p>
+                <ul>
+                    <li>Provide the App services</li>
+                    <li>Comply with legal obligations</li>
+                    <li>Resolve disputes</li>
+                    <li>Enforce our agreements</li>
+                </ul>
+                <p><strong>Retention Periods:</strong></p>
+                <ul>
+                    <li>Inactive accounts are deleted after 3 years of inactivity</li>
+                    <li>Most data from closed accounts is deleted within 90 days</li>
+                    <li>Some data may be retained longer for legal or business purposes</li>
+                </ul>
+            </div>
+
+            <div class="privacy-section">
+                <h2>7. Your Rights and Choices</h2>
+                <p>You have the following rights regarding your personal information:</p>
+
+                <h3>Access and Update</h3>
+                <ul>
+                    <li>Access your personal information</li>
+                    <li>Update or correct inaccurate data</li>
+                    <li>Request a copy of your data</li>
+                </ul>
+
+                <h3>Deletion</h3>
+                <ul>
+                    <li>Delete your account and personal information</li>
+                    <li>Request removal of specific data</li>
+                    <li>Use in-app deletion features</li>
+                </ul>
+
+                <h3>Communication Preferences</h3>
+                <ul>
+                    <li>Opt out of promotional communications</li>
+                    <li>Manage notification settings</li>
+                    <li>Control marketing preferences</li>
+                </ul>
+
+                <h3>Location Services</h3>
+                <ul>
+                    <li>Disable location tracking in device settings</li>
+                    <li>Control location permissions</li>
+                </ul>
+
+                <p><strong>To exercise your rights, contact us at:</strong> <a href="mailto:defenderdeposit@gmail.com" style="color: var(--neon-blue); text-decoration: none;">defenderdeposit@gmail.com</a></p>
+            </div>
+
+            <div class="privacy-section">
+                <h2>8. Children's Privacy</h2>
+                <div class="highlight-box">
+                    <p>The App is not intended for children under 18 years of age. We do not knowingly collect personal information from children under 18. If we become aware that we have collected such information, we will take steps to delete it promptly.</p>
+                </div>
+            </div>
+
+            <div class="privacy-section">
+                <h2>9. International Data Transfers</h2>
+                <p>Your information may be transferred to and processed in countries other than your country of residence. We ensure appropriate safeguards are in place for international transfers, including:</p>
+                <ul>
+                    <li>Standard contractual clauses</li>
+                    <li>Adequacy decisions</li>
+                    <li>Privacy Shield frameworks (where applicable)</li>
+                    <li>Other legally approved transfer mechanisms</li>
+                </ul>
+            </div>
+
+            <div class="privacy-section">
+                <h2>10. Third-Party Services and Links</h2>
+                <p>Our App may integrate with third-party services and contain links to external websites. These integrations are governed by the respective third parties' privacy policies, and we are not responsible for the privacy practices of these external sites.</p>
+                <p><strong>Third-party services may include:</strong></p>
+                <ul>
+                    <li>Payment processors (Apple App Store)</li>
+                    <li>Analytics providers (Firebase Analytics)</li>
+                    <li>Cloud storage services</li>
+                    <li>Customer support platforms</li>
+                </ul>
+            </div>
+
+            <div class="privacy-section">
+                <h2>11. Cookies and Tracking Technologies</h2>
+                <p>We use various technologies to collect and store information, including:</p>
+                <ul>
+                    <li><strong>Local Storage:</strong> To save preferences and app settings</li>
+                    <li><strong>Analytics Tools:</strong> Like Firebase Analytics to understand app usage</li>
+                    <li><strong>Device Identifiers:</strong> To recognize your device</li>
+                    <li><strong>Log Files:</strong> To record app activity and errors</li>
+                </ul>
+            </div>
+
+            <div class="privacy-section">
+                <h2>12. Changes to This Privacy Policy</h2>
+                <p>We may update this Privacy Policy from time to time. We will:</p>
+                <ul>
+                    <li>Post the updated policy in the App</li>
+                    <li>Notify you of significant changes</li>
+                    <li>Update the "Last Updated" date</li>
+                    <li>Obtain consent where required by law</li>
+                </ul>
+                <p>Your continued use of the App after changes constitutes acceptance of the updated policy.</p>
+            </div>
+
+            <div class="privacy-section">
+                <h2>13. Regional Privacy Rights</h2>
+                <p>We comply with applicable privacy laws in all jurisdictions where our App is available.</p>
+
+                <h3>For California Residents (CCPA)</h3>
+                <ul>
+                    <li>Right to know what information is collected</li>
+                    <li>Right to deletion of personal information</li>
+                    <li>Right to opt-out of sale (we do not sell data)</li>
+                    <li>Right to non-discrimination</li>
+                </ul>
+
+                <h3>For European Union Residents (GDPR)</h3>
+                <ul>
+                    <li>Right to access and portability</li>
+                    <li>Right to rectification and erasure</li>
+                    <li>Right to restrict processing</li>
+                    <li>Right to object to processing</li>
+                    <li>Right to withdraw consent</li>
+                </ul>
+            </div>
+
+            <div class="contact-box">
+                <h3>14. Contact Information</h3>
+                <p>For questions about this Privacy Policy or to exercise your rights, please contact us at:</p>
+                <p><strong>Email:</strong> <a href="mailto:defenderdeposit@gmail.com">defenderdeposit@gmail.com</a></p>
+            </div>
+
+            <div class="privacy-section">
+                <h2>15. Complaints</h2>
+                <p>If you have concerns about our privacy practices, you may:</p>
+                <ul>
+                    <li>Contact us directly at the email address above</li>
+                    <li>File a complaint with your local data protection authority</li>
+                    <li>Contact the UK Information Commissioner's Office (ICO)</li>
+                </ul>
+            </div>
+
+            <div class="highlight-box" style="margin-top: 3rem; text-align: center;">
+                <p><strong>By using Deposit Defender, you acknowledge that you have read and understood this Privacy Policy and agree to its terms.</strong></p>
+            </div>
+
+            <div style="text-align: center; margin-top: 2rem; padding: 1.5rem; color: rgba(234, 234, 234, 0.6);">
+                <p>&copy; 2025 Deposit Defender. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <div class="footer-logo-icon">
+                    <svg class="shield" viewBox="0 0 100 120">
+                        <path d="M50 5 L10 20 L10 50 Q10 90 50 115 Q90 90 90 50 L90 20 Z"/>
+                    </svg>
+                </div>
+                <div class="footer-logo-text">DEPOSIT DEFENDER</div>
+            </div>
+            <p>&copy; 2025 Deposit Defender. All rights reserved.</p>
+            <p>London, United Kingdom</p>
+            <div class="footer-links">
+                <a href="index.html#home">Home</a>
+                <a href="index.html#about">About</a>
+                <a href="index.html#products">Features</a>
+                <a href="index.html#contact">Contact</a>
+                <a href="terms-of-use.html">Terms of Use</a>
+                <a href="privacy-policy.html">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('active');
+        }
+
+        document.addEventListener('click', (e) => {
+            const nav = document.querySelector('nav');
+            const navLinks = document.getElementById('navLinks');
+            
+            if (!nav.contains(e.target) && navLinks.classList.contains('active')) {
+                navLinks.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+</html>
